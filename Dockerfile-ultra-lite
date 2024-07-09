@@ -1,5 +1,8 @@
 # use alpine
-FROM alpine:3.20.0
+# FROM alpine:3.20.0
+ARG BASE_TAG="develop"
+ARG BASE_IMAGE="core-alpine-320"
+FROM kasmweb/$BASE_IMAGE:$BASE_TAG
 
 ARG VERSION_TAG
 
